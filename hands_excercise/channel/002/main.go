@@ -17,6 +17,7 @@ func gen() <-chan int {
 			c <- i
 
 		}
+		// closing is must while ranging the channel
 		close(c)
 	}()
 
@@ -24,6 +25,7 @@ func gen() <-chan int {
 
 }
 func receive(c <-chan int) {
+	// ranging channel keep listening the channel untill its closed
 	for v := range c {
 		fmt.Println(v)
 	}
