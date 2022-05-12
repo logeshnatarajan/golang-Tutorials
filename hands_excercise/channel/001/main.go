@@ -17,7 +17,7 @@ func main() {
 	}()
 	fmt.Println(<-ch)
 	fmt.Println(<-ch)
-
+        // channel of type *map[string]int
 	mapp := make(chan *map[string]int)
 	go func() {
 		mapp <- &mm
