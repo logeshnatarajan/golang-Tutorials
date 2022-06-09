@@ -17,6 +17,6 @@ func foo() int {
 
 }
 func bar() (int, string) {
-	return 43, "hello"
+	return 44, "hello"
 
 }
