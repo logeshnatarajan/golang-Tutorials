@@ -13,7 +13,7 @@ func main() {
 }
 func foo() int {
 
-	return 42
+	return 43
 
 }
 func bar() (int, string) {
