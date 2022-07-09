@@ -13,7 +13,7 @@ func f() {
 
 		if r := recover(); r != nil {
 
-			fmt.Println("recovering r", r)
+			fmt.Println("recovering the r", r)
 
 		}
 	}()
